@@ -19,3 +19,33 @@ target
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# RISC-V OS specific patterns
+# Kernel and bootloader binaries
+*.elf
+*.bin
+*.img
+*.iso
+
+# Simulation outputs
+*.vvp
+sim/output/
+sim/waves/
+*.vcd
+
+# Object files and archives
+*.o
+*.a
+*.rlib
+
+# Build artifacts for different targets
+target-**/
+
+# QEMU and emulation
+qemu-output/
+*.qcow2
+
+# Documentation builds
+docs/_build/
+docs/html/
+docs/latex/
